@@ -1,100 +1,966 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Velothink</title>
+  <title>Dinosaurs</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-  <style>
+<style>
     body {
         background-image: url('ark.jpg');
     }
-    #navabar {
+    #navbar {
         background-color: #242424;
-    
-   
         height: 120px;
-        }
-    #esittely {
-        background-color: white;
-        width: 1000px;
-        height: 1000px;
-        position: relative;
     }
-    ul {
+    .navbar ul,
+    ul.nav.navbar-nav {
         float: none;
         text-align: center;
         padding: 35px;
         text-decoration: none;
         font-size: 20px;
     }
+    .container {
+      background-color: white;
+      padding: 20px;
+      height: 5000px;
+      position: relative;
+      width: 1300px;
+    }
+    .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+      
+    }
+    li {
+      flex: 1;
+      text-align: center;
+      margin: 5px;
+    }
+    #Images {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+    .image-box {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    }
     .navbar-search{
         position: absolute;
         right: 1%;
         left: 85%;
     }
-    #page-container {
-    position: relative;
-    min-height: 100vh;
-   }
-   footer{
-    margin-top: auto;
+   #main-footer {
     width: 100%;
-    background-color: black;
-  } 
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-inverse" id="navabar">
-  <div class="container-fluid">
-
-    <div class="navbar-header" id="logo">
-      <a href="etusivu.html">
-        <img src="Velothink logo.jpg" width="120px" height="119px"></a>
-    </div>
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    }
     
-    <ul class="nav navbar-nav">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Dinosaurs</a></li>
-          <li><a href="#">Players</a></li>
-     
-        </ul>
-      </li>
-      <li><a href="#">Gameplay</a></li>
-      <li><a href="#">Featured</a></li>
-   
-
-    <form class="navbar-search" action="/action_page.php">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" name="search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
-              <i class="glyphicon glyphicon-search"></i>
-            </button>
+</style>
+<body>
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header" id="logo">
+            <a href="ark.html">
+              <img src="Velothink logo.jpg" width="120px" height="119px"></a>
           </div>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#">
+                Creatures
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dinosaurs</a></li>
+                <li><a href="#">Bosses</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Gameplay</a></li>
+            <li><a href="#">Featured</a></li>
+            <form class="navbar-search" action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </ul>
         </div>
-      </form>
+      </nav>
+      
+
+  <div class="container">
+    <h1>The Island Creatures</h1>
+    <ul class="first-row">
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0">
+          <img src="creatures/achatina.png" id="Images">
+          <br>
+          Achatina
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/allosaurus.png" id="Images">
+          <br>
+          Allosaurus
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/ammonite.png" id="Images">
+          <br>
+          Ammonite
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/angler.png" id="Images">
+          <br>
+          Angler
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/ankylosaurus.png" id="Images">
+          <br>
+          Ankylosaurus
+        </div>
+      </li>
     </ul>
+
+    <ul class="second-list">
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/araneo.png" id="Images">
+          <br>
+          Araneo
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/archaeopteryx.png" id="Images">
+          <br>
+          Archaeopteryx
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/argentavis.png" id="Images">
+          <br>
+          Argentavis
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/arthropluera.png" id="Images">
+          <br>
+          Arthropluera
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/attackdrone.png" id="Images">
+          <br>
+          Attack Drone
+        </div>
+      </li>
+    </ul>
+
+    <ul class="thrid-list">
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/baryonyx.png" id="Images">
+          <br>
+          Baryonyx
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/basilosaurus.png" id="Images">
+          <br>
+          Basilosaurus
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/beelzebufo.png" id="Images">
+          <br>
+          Beelzebufo
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/brontosaurus.png" id="Images">
+          <br>
+          Brontosaurus
+        </div>
+      </li>
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <img src="creatures/broodmotherlysrix.png" id="Images">
+          <br>
+          Broodmother Lysrix
+        </div>
+      </li>
+    </ul>
+
+    <ul class="fourth-list">
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/carbonemys.png" id="Images">
+            <br>
+            Carbonemys
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/carcharodontosaurus.png" id="Images">
+            <br>
+            Carcharodontosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/carnotaurus.png" id="Images">
+            <br>
+            Carnotaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/castoroides.png" id="Images">
+            <br>
+            Castoroides
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/chalicotherium.png" id="Images">
+            <br>
+            Chalicotherium
+          </div>
+        </li>
+      </ul>
+
+      <ul class="fifth-list">
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/cnidaria.png" id="Images">
+            <br>
+            Cnidaria
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/coelacanth.png" id="Images">
+            <br>
+            Coelacanth
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/compy.png" id="Images">
+            <br>
+            Compy
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/daeodon.png" id="Images">
+            <br>
+            Daeodon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/defenseunit.png" id="Images">
+            <br>
+            Defense Unit
+          </div>
+        </li>
+      </ul>
+
+      <ul class="sixth-list">
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dilophosaur.png" id="Images">
+            <br>
+            Dilophosaur
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dimetrodon.png" id="Images">
+            <br>
+            Dimetrodon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dimorphodon.png" id="Images">
+            <br>
+            Dimorphodon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/diplocaulus.png" id="Images">
+            <br>
+            Diplocaulus
+          </div>
+        </li>
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/diplodocus.png" id="Images">
+              <br>
+              Diplocaulus
+            </div>
+        </li>
+      </ul>
+
+      <ul class="seventh-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/direbear.png" id="Images">
+              <br>
+              Direbear
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/direwolf.png" id="Images">
+            <br>
+            Direwolf
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dodo.png" id="Images">
+            <br>
+            Dodo
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/doedicurus.png" id="Images">
+            <br>
+            Doedicurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dragon.png" id="Images">
+            <br>
+            Dragon
+          </div>
+        </li>
+      </ul>
+
+      <ul class="eighth-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/dungbeetle.png" id="Images">
+              <br>
+              Dung Beetle
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/dunkleosteus.png" id="Images">
+            <br>
+            Dunkleosteus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/electrophorus.png" id="Images">
+            <br>
+            Electrophorus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/equus.png" id="Images">
+            <br>
+            Equus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/eurypterid.png" id="Images">
+            <br>
+            Eurypterid
+          </div>
+        </li>
+      </ul>
+
+      <ul class="ninth-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/gallimimus.png" id="Images">
+              <br>
+              Gallimimus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/giantbee.png" id="Images">
+            <br>
+            Giant Bee
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/giganotosaurus.png" id="Images">
+            <br>
+            Giganotosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/gigantopithecus.png" id="Images">
+            <br>
+            Gigantopithecus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/hesperornis.png" id="Images">
+            <br>
+            Hesperornis
+          </div>
+        </li>
+      </ul>
+
+      <ul class="tenth-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/hyaenodon.png" id="Images">
+              <br>
+              Hyaenodon
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/ichthyornis.png" id="Images">
+            <br>
+            Ichthyornis
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/ichthyosaurus.png" id="Images">
+            <br>
+            Ichthyosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/iguanodon.png" id="Images">
+            <br>
+            Iguanodon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/kairuku.png" id="Images">
+            <br>
+            Kairuku
+          </div>
+        </li>
+      </ul>
+
+      <ul class="11th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/kaprosuchus.png" id="Images">
+              <br>
+              Kaprosuchus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/kentrosaurus.png" id="Images">
+            <br>
+            Kentrosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/leech.png" id="Images">
+            <br>
+            Leech
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/leedsichthys.png" id="Images">
+            <br>
+            Leedsichthys
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/liopleurodon.png" id="Images">
+            <br>
+            Liopleurodon
+          </div>
+        </li>
+      </ul>
+
+      <ul class="12th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/lystrosaurus.png" id="Images">
+              <br>
+              Lystrosaurus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/mammoth.png" id="Images">
+            <br>
+            Mammoth
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/manta.png" id="Images">
+            <br>
+            Manta
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/megalania.png" id="Images">
+            <br>
+            Megalania
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/megaloceros.png" id="Images">
+            <br>
+            Megaloceros
+          </div>
+        </li>
+      </ul>
+
+      <ul class="13th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/megalodon.png" id="Images">
+              <br>
+              Megalodon
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/megalosaurus.png" id="Images">
+            <br>
+            Megalosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/meganeura.png" id="Images">
+            <br>
+            Meganeura
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/megapithecus.png" id="Images">
+            <br>
+            Megapithecus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/megatherium.png" id="Images">
+            <br>
+            Megatherium
+          </div>
+        </li>
+      </ul>
+
+      <ul class="14th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/mesopithecus.png" id="Images">
+              <br>
+              Mesopithecus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/microraptor.png" id="Images">
+            <br>
+            Microraptor
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/mosasaurus.png" id="Images">
+            <br>
+            Mosasaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/moschops.png" id="Images">
+            <br>
+            Moschops
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/onyc.png" id="Images">
+            <br>
+            Onyc
+          </div>
+        </li>
+      </ul>
+
+      <ul class="15th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/otter.png" id="Images">
+              <br>
+              Otter
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/overseer.png" id="Images">
+            <br>
+            Overseer
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/oviraptor.png" id="Images">
+            <br>
+            Oviraptor
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/ovis.png" id="Images">
+            <br>
+            Ovis
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/pachy.png" id="Images">
+            <br>
+            Pachy
+          </div>
+        </li>
+      </ul>
+
+      <ul class="16th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/pachyrhinosaurus.png" id="Images">
+              <br>
+              Pachyrhinosaurus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/paracer.png" id="Images">
+            <br>
+            Paraceratherium
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/parasaur.png" id="Images">
+            <br>
+            Parasaur
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/pegomastax.png" id="Images">
+            <br>
+            Pegomastax
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/pelagornis.png" id="Images">
+            <br>
+            Pelagornis
+          </div>
+        </li>
+      </ul>
+
+      <ul class="17th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/phiomia.png" id="Images">
+              <br>
+              Phiomia
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/piranha.png" id="Images">
+            <br>
+            Piranha
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/plesiosaur.png" id="Images">
+            <br>
+            Plesiosaur
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/procoptodon.png" id="Images">
+            <br>
+            Procoptodon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/pteranodon.png" id="Images">
+            <br>
+            Pteranodon
+          </div>
+        </li>
+      </ul>
+
+      <ul class="18th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/pulmonoscorpius.png" id="Images">
+              <br>
+              Pulmonoscorpius
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/purlovia.png" id="Images">
+            <br>
+            Purlovia
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/quetzal.png" id="Images">
+            <br>
+            Quetzal
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/raptor.png" id="Images">
+            <br>
+            Raptor
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/rex.png" id="Images">
+            <br>
+            Rex
+          </div>
+        </li>
+      </ul>
+
+      <ul class="19th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/royalgriffin.png" id="Images">
+              <br>
+              Royal Griffin
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/sabertooth.png" id="Images">
+            <br>
+            Sabertooth
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/sabertoothsalmon.png" id="Images">
+            <br>
+            Sabertooth Salmon
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/sarco.png" id="Images">
+            <br>
+            Sarco
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/spinosaur.png" id="Images">
+            <br>
+            Spinosaurus
+          </div>
+        </li>
+      </ul>
+
+      <ul class="20th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/stegosaurus.png" id="Images">
+              <br>
+              Stegosaurus
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/tapejara.png" id="Images">
+            <br>
+            Tapejara
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/terrorbird.png" id="Images">
+            <br>
+            Terror Bird
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/therizinosaurus.png" id="Images">
+            <br>
+            Therizinosaurus
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/thylacoleo.png" id="Images">
+            <br>
+            Thylacoleo
+          </div>
+        </li>
+      </ul>
+
+      <ul class="21th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/titanoboa.png" id="Images">
+              <br>
+              Titanoboa
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/titanomyrma.png" id="Images">
+            <br>
+            Titanomyrma
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/titanosaur.png" id="Images">
+            <br>
+            Titanosaur
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/triceratops.png" id="Images">
+            <br>
+            Triceratops
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/trilobite.png" id="Images">
+            <br>
+            Trilobite
+          </div>
+        </li>
+      </ul>
+
+      <ul class="22th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/troodon.png" id="Images">
+              <br>
+              Troodon
+            </div>
+          </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/tusoteuthis.png" id="Images">
+            <br>
+            Tusoteuthis
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/unicorn.png" id="Images">
+            <br>
+            Unicorn
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/woollyrhino.png" id="Images">
+            <br>
+            Woolly Rhino
+          </div>
+        </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <img src="creatures/yeti.png" id="Images">
+            <br>
+            Yeti
+          </div>
+        </li>
+      </ul>
+
+
+    <ul class="22th-list">
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <img src="creatures/yutyrannus.png" id="Images">
+              <br>
+              Yutyrannus
+            </div>
+          </li>
+    </ul>
+
   </div>
-  </div>
-</nav>
-  
-<div class="container" id="esittely">
-<h1>The Island Creatures</h1>
-<br>
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h2> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-<img src="ark.jpg" width="300px" height="200px" <h3>Dinosaurs</h3>
+
+  <footer id="main-footer">
+    <p>© Copyright 2023</p>
+  </footer>
 
 </body>
 </html>
