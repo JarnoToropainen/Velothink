@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Velothink</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+   
+    body {
+        background-image: url("ark.jpg");
+        
+    }
+    #navbar {
+        background-color: #242424;
+        height: 120px;
+        }
+    #esittely {
+        background-color: wheat;
+        width: 1100px;
+        height: 1700px;
+        position: relative;
+    }
+    ul {
+        float: none;
+        text-align: center;
+        padding: 35px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbar-search{
+        position: absolute;
+        right: 1%;
+        left: 85%;
+    }
+    #main-footer {
+    width: 100%;
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    }
+    h3 {
+        text-align: center;
+    }
+    .left-side {
+        float: left;
+        width: 50%;
+    }
+
+    .right-side {
+        float: right;
+        width: 50%;
+    }
+    #dino-kuva {
+        float: right; 
+        margin-left: 20px; 
+    }
+    #taming-linkki {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #right-pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header" id="logo">
+      <a href="ARK.html">
+        <img src="Velothink logo.jpg" width="120px" height="119px"></a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="dinosaurukset.html">Dinosaurs</a></li>     
+          <li><a href="#">Bosses</a></li>
+     
+        </ul>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Features<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Caves</a></li>
+          <li><a href="#">Tribes</a></li>
+
+        </ul>
+    </li>
+    <li><a href="#">Gameplay</a></li>
+   
+
+    <form class="navbar-search" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+<div class="container" id="esittely">
+    <div class="container">
+        <div class="left-side">
+            <h1>Electrophorus</h1>
+
+  <p>The Dunkleosteus (dun-kul-Os-tee-us,) also referred to as the Dunkly, or simply the Dunk, is one of the creatures in ARK: Survival Evolved. </p>
+
+  <h2>Basic Info</h2>
+
+  <div id="dino-kuva"> 
+    <img src="/creatures/Dunkleosteus.png" width="300" height="200">
+  </div>
+
+
+  <div id="electrophorus-info">
+    <h4>Species</h4>
+    <p>Electrophorus beluadomito</p>
+    <h4>Time</h4>
+    <p>Holocene</p>
+    <h4>Diet</h4>
+    <p>Carnivore</p>
+    <h4>Temperament</h4>
+    <p>Aggressive</p>
+  </div>
+  
+  <h2>Basic Info</h2>
+  
+  <div id="electrophorus-description">
+    <p>Occupying a space in the low-to-middle end of the food chain, Electrophorus beluadomito is a carnivorous swimmer that feeds mostly off of shellfish and small fish. Despite its common name, it is actually a very long Knifefish, and not an Eel. It does not provide much meat, so many predators simply leave it be. Unlike most predators, it does not use brute strength to bring down its prey, but instead releases an electrical charge around itself to knock its prey unconscious. Alone, this can take out a small creature. When attacking together, Electrophorus can even bring down the larger ocean lifeforms, and then feed as a group.</p>
+  </div>
+  
+  <h2>Domesticated</h2>
+  
+  <div id="electrophorus-usage">
+    <p>By far, the most common use of Electrophorus is to subdue large ocean creatures. Knocking out a Plesiosaur or other giant deep-sea leviathan can be incredibly difficult... ...thus many tribes employ small schools of Electrophorus to shock them into submission!</p>
+  </div>
+  
+  <h2>Behavior</h2>
+  
+  <div id="electrophorus-behavior">
+    <p>Electrophorus will attack if within view of the creature. Once within its aggro distance, Electrophorus will follow the player, even upon swimming to the surface of the water. It can be found at middle deep-sea and is faster than the Cnidaria. Due to their disabling shock attacks and fast swimming speeds, it is best to steer well clear of these creatures without proper preparation. Electrophorus will ignore wild dinos if there is a player or tamed dino in the area. They will chase their prey at very fast speeds and only let go if the prey is very far away, or the prey moves out of the water. If the Electrophorus reaches its target, it will zap them. This will slow and reduce the damage output of any creature except for Basilosaurus and Tusoteuthis for 8–10 seconds, rendering them less effective at fighting and possibly ensuring they will not be able to run away. After the prey is zapped, the Electrophorus and any nearby wild dinos such as Megalodons will start to feast on the helpless meal.</p>
+  </div>
+  
+  <h2>Appearance</h2>
+  
+  <div id="electrophorus-appearance">
+    <p>Electrophorus is a long eel-like fish with a fin running from the back of its head to its abdomen. Its mouth is packed with sharp teeth to attack the small fish and shellfish that make up its diet.</p>
+  </div>
+        </div>
+
+<div class="right-side">
+  <h3>Taming</h3>
+  <div id="taming-linkki">
+      <iframe width="390" height="320"src="https://www.youtube.com/embed/edRYdyEWqVw"allowfullscreen>
+      </iframe>
+  </div>
+      <h3>Habitat</h3>
+  <div id="right-pictures">
+      <img src="/locations/Electrophorus.png">
+  </div>
+      <h3>Domestication</h3>
+  <div id="right-pictures">
+      <img src="/domestications/Electrophorus.png">
+  </div>
+      <h3>Reproduction</h3>
+  <div id="right-pictures">
+      <img src="/reproduction/Electrophorus.png">
+  </div>
+       
+</div>
+ 
+<footer id="main-footer">
+    <p>© Copyright 2023</p>  
+</footer> 
+
+</body>
+</html>
