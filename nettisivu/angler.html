@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Velothink</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+   
+    body {
+        background-image: url("ark.jpg");
+        
+    }
+    #navbar {
+        background-color: #242424;
+        height: 120px;
+        }
+    #esittely {
+        background-color: wheat;
+        width: 1100px;
+        height: 1800px;
+        position: relative;
+    }
+    ul {
+        float: none;
+        text-align: center;
+        padding: 35px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbar-search{
+        position: absolute;
+        right: 1%;
+        left: 85%;
+    }
+    #main-footer {
+    width: 100%;
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    }
+    h3 {
+        text-align: center;
+    }
+    .left-side {
+        float: left;
+        width: 50%;
+    }
+
+    .right-side {
+        float: right;
+        width: 50%;
+    }
+    #dino-kuva {
+        float: right; 
+        margin-left: 20px; 
+    }
+    #taming-linkki {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #right-pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header" id="logo">
+      <a href="ARK.html">
+        <img src="Velothink logo.jpg" width="120px" height="119px"></a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="dinosaurukset.html">Dinosaurs</a></li>     
+          <li><a href="#">Bosses</a></li>
+     
+        </ul>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Features<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Caves</a></li>
+          <li><a href="#">Tribes</a></li>
+
+        </ul>
+    </li>
+    <li><a href="#">Gameplay</a></li>
+   
+
+    <form class="navbar-search" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+<div class="container" id="esittely">
+    <div class="container">
+        <div class="left-side">
+            <h1>Angler</h1>
+
+  <p>The Anglerfish or Angler is one of the Creatures.</p>
+
+  <h2>Basic Info</h2>
+
+  <div id="dino-kuva"> 
+    <img src="/creatures/angler.png" width="300" height="200">
+  </div>
+
+    <h4>Species</h4>
+    <p>Melanocetus anglerpescum</p>
+    <h4>Time</h4>
+    <p>Early Cretaceous - Holocene</p>
+    <h4>Diet</h4>
+    <p>Carnivore</p>
+    <h4>Temperament</h4>
+    <p>Aggressive</p>
+
+    <h2>Wild</h2>
+    <p>Whether its size is caused by adaptation to the Island's other inhabitants, or by cross-breeding with another larger species, Melanocetus angerlpescum is the largest form of Anglerfish I've ever heard of.</p>
+    <p>Typically found among the deepest, darkest expanses of the ocean, this creature preys on smaller fish while being an excellent source of food for larger predators.</p>
+    <p>Melanocetus has an array of bioluminescent light pods at the end of stalks on its head. </p> 
+    <p>Like typical Anglerfish, it primarily uses these to attract smaller creatures and trick them into coming close enough for Melanocetus to consume the prey.</p>
+    <p>This often makes wild Melanocetus itself relatively easy to spot among the briny depths.</p>
+
+    <h2>Domesticated</h2>
+    <p>Exploring the depths of the ocean can be difficult. </p>
+    <p>The cold, the lack of air, and the shocking absence of light combine to make travel very dangerous.</p>
+    <p>A tamed Anglerfish can use the natural light at the end of its stalks to illuminate the depths, making exploration not only safer but more lucrative, as I've heard some survivors use this creature to harvest the silica pearls found throughout the ocean's depths!</p>
+
+    <h2>Behavior</h2>
+    <p>Despite being described in its Dossier as being generally skittish, the Angler will attack the player and any tamed creatures on sight.</p>
+    <p>When damaged in a fight, they will attempt to flee but will turn around and attack again after a short chase.</p>
+
+    <h2>Appearance</h2>
+    <p>This fish has three bio luminescent lures on its head and an oversized mouth lined with long, needle-like teeth to capture prey, perfect for survival in the lowest depths of the Island's ocean.</p>
+</div>
+
+<div class="right-side">
+    <h3>Taming</h3>
+    <div id="taming-linkki">
+        <iframe width="390" height="320" src="https://www.youtube.com/embed/Bofz5SAmgmo">
+        </iframe>
+    </div>
+        <h3>Habitat</h3>
+    <div id="right-pictures">
+        <img src="/locations/angler.png">
+    </div>
+        <h3>Domestication</h3>
+    <div id="right-pictures">
+        <img src="/domestications/angler.png">
+    </div>
+        <h3>Reproduction</h3>
+    <div id="right-pictures">
+        <img src="/reproduction/angler.png">
+    </div>
+         
+</div>
+
+<footer id="main-footer">
+    <p>© Copyright 2023</p>  
+</footer> 
+
+</body>
+</html>

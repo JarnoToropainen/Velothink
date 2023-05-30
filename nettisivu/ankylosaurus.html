@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Velothink</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+   
+    body {
+        background-image: url("ark.jpg");
+        
+    }
+    #navbar {
+        background-color: #242424;
+        height: 120px;
+        }
+    #esittely {
+        background-color: wheat;
+        width: 1100px;
+        height: 1800px;
+        position: relative;
+    }
+    ul {
+        float: none;
+        text-align: center;
+        padding: 35px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbar-search{
+        position: absolute;
+        right: 1%;
+        left: 85%;
+    }
+    #main-footer {
+    width: 100%;
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    }
+    h3 {
+        text-align: center;
+    }
+    .left-side {
+        float: left;
+        width: 50%;
+    }
+
+    .right-side {
+        float: right;
+        width: 50%;
+    }
+    #dino-kuva {
+        float: right; 
+        margin-left: 20px; 
+    }
+    #taming-linkki {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #right-pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header" id="logo">
+      <a href="ARK.html">
+        <img src="Velothink logo.jpg" width="120px" height="119px"></a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="dinosaurukset.html">Dinosaurs</a></li>     
+          <li><a href="#">Bosses</a></li>
+     
+        </ul>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Features<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Caves</a></li>
+          <li><a href="#">Tribes</a></li>
+
+        </ul>
+    </li>
+    <li><a href="#">Gameplay</a></li>
+   
+
+    <form class="navbar-search" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+<div class="container" id="esittely">
+    <div class="container">
+        <div class="left-side">
+            <h1>Amkylosaurus</h1>
+
+  <p>The Ankylosaurus (an-KYE-low-SAWR-us), also referred to as the Ankylo or Anky.</p>
+
+  <h2>Basic Info</h2>
+
+  <div id="dino-kuva"> 
+    <img src="/creatures/ankylosaurus.png" width="300" height="200">
+  </div>
+
+    <h4>Species</h4>
+    <p>Ankylosaurus crassacutis</p>
+    <h4>Time</h4>
+    <p>Late Cretaceous</p>
+    <h4>Diet</h4>
+    <p>Herbivore</p>
+    <h4>Temperament</h4>
+    <p>Docile</p>
+
+    <h2>Wild</h2>
+    <p>Unlike many of the herd animals on the Island, Ankylosaurus crassacutis tends to live in small family units.</p>
+    <p>I believe they can afford to stick with smaller groups because of their incredibly thick skin, for which they're named.</p>
+    <p>Despite not being among the largest of the Island's herbivores, Ankylosaurus is one of the more difficult creatures to take down. </p> 
+    <p>Its thick, armored skin seems to make it more than a match for several of the mid-sized predators that would otherwise hunt it.</p>
+    <p>Reckless carnivores are just as likely to hurt themselves on Ankylosaurus' spikes, as they are to get hit by its tail.</p>
+
+    <h2>Domesticated</h2>
+    <p>Without a doubt, the best trait of a trained Ankylosaurus is its enormously dense tail.</p>
+    <p>This tail is powerful enough to quickly shatter the resource-laden rocks of the Island.</p>
+    <p>One of the wealthier human tribes on the island utilizes a squad of Ankylosaurs in its mines and quarries.</p>
+    <p>The creature's affinity for metal enables it to carry raw ore at an effectively reduced weight.</p>
+
+    <h2>Behavior</h2>
+    <p>Ankylosaurus can be found peacefully wandering around the Island.</p>
+    <p>They will not attack unless provoked, and since they can deal a devastating blow with their tail club if angered, it is best for survivors to leave this beast alone.</p>
+    <p>They have a very low movement speed on land but can move significantly faster in water.</p>
+
+    <h2>Appearance</h2>
+    <p>Ankylosaurus is a species of medium, quadrupedal herbivore that inhabits the ARKs.</p>
+    <p>Its skin is adorned with a thick coating of spikes, bony plates, osteoderms, and fused bone. </p>
+    <p>The head has plentiful spikes, as well as a beak at the tip of the mouth and enlarged nasals. </p>
+    <p>They are relatively low to the ground with short legs and a low head; they protect themselves by wielding a wicked club on the end of their muscular tails.</p>
+    <p>The only region not covered with body armour is the belly.</p>
+</div>
+
+<div class="right-side">
+    <h3>Taming</h3>
+    <div id="taming-linkki">
+        <iframe width="390" height="320" src="https://www.youtube.com/embed/X3yOiyYe2RI">
+        </iframe>
+    </div>
+        <h3>Habitat</h3>
+    <div id="right-pictures">
+        <img src="/locations/ankylosaurus.png">
+    </div>
+        <h3>Domestication</h3>
+    <div id="right-pictures">
+        <img src="/domestications/ankylosaurus.png">
+    </div>
+        <h3>Reproduction</h3>
+    <div id="right-pictures">
+        <img src="/reproduction/ankylosaurus.png">
+    </div>
+         
+</div>
+
+<footer id="main-footer">
+    <p>© Copyright 2023</p>  
+</footer> 
+
+</body>
+</html>
