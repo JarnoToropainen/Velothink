@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+   
+    body {
+        background-image: url("ark.jpg");
+    }
+    #navabar {
+        background-color: #242424;
+    
+   
+        height: 120px;
+        }
+    #esittely {
+        background-color: white;
+        width: 1000px;
+        height: 935px;
+        position: relative;
+
+    }
+    
+    footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #242424;
+    height: 73px;
+    color: white;
+    position: relative;
+    
+    }
+    ul {
+        float: none;
+        text-align: center;
+        padding: 35px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbar-search{
+        position: absolute;
+        right: 1%;
+        left: 85%;
+    }
+  ul {
+      float: none;
+      text-align: center;
+      padding: 35px;
+      text-decoration: none;
+      font-size: 20px;
+  }
+
+  .container {
+    background-color: wheat;
+    padding: 20px;
+    height: 720px;
+    position: relative;
+    width: 1300px;
+  }
+  .container ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 10;
+  display: flex;
+
+  }
+  li {
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+  }
+  #Images {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
+  .image-box {
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  }
+
+ #main-footer {
+  width: 100%;
+  background: #242424;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: auto;
+  }
+
+</style>
+
+<body>
+  <nav class="navbar navbar-inverse" id="navabar">
+    <div class="container-fluid">
+  
+      <div class="navbar-header" id="logo">
+        <a href="ARK.html">
+          <img src="Velothink logo.jpg" width="120px" height="119px"></a>
+      </div>
+      
+      <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="dinosaurukset.html">Dinosaurs</a></li>     
+            <li><a href="bosses.html">Bosses</a></li>
+       
+          </ul>
+        </li>
+        <li><a href="#">Gameplay</a></li>
+        <li><a href="#">Features</a></li>
+     
+  
+      <form class="navbar-search" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </ul>
+    </div>
+    </div>
+  </nav>
+      
+
+<div class="container">
+    <h1>The Island Bosses</h1>
+    <ul class="first-row">
+      <li>
+        <div class="image-box" style="background-color: #C0C0C0;">
+          <a href="">
+          <img src="creatures/broodmotherlysrix.png" id="Images">
+          <br>
+          Broodmother Lysrix
+        </a>
+        </div>
+      </li>
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <a href="">
+            <img src="creatures/dragon.png" id="Images">
+            <br>
+            Dragon
+            </a>
+          </div>
+        </li>
+
+
+        <li>
+            <div class="image-box" style="background-color: #C0C0C0;">
+              <a href="">
+              <img src="creatures/mesopithecus.png" id="Images">
+              <br>
+              Mesopithecus
+              </a>
+            </div>
+          </li>
+    
+        <li>
+          <div class="image-box" style="background-color: #C0C0C0;">
+            <a href="">
+            <img src="creatures/overseer.png" id="Images">
+            <br>
+            Overseer
+            </a>
+          </div>
+        </li>
+    </ul>
+  </div>
+
+  <footer id="main-footer">
+    <p>© Copyright 2023</p>
+  </footer>
+
+</body>
+</html>
