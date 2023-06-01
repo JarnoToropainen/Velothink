@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Velothink</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+   
+    body {
+        background-image: url("ark.jpg");
+        
+    }
+    #navbar {
+        background-color: #242424;
+        height: 120px;
+        }
+    #esittely {
+        background-color: wheat;
+        width: 1100px;
+        height: 1200px;
+        position: relative;
+        overflow: auto;
+    }
+    ul {
+        float: none;
+        padding: 35px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .navbar-search{
+        position: absolute;
+        right: 1%;
+        left: 85%;
+    }
+    #main-footer {
+    width: 100%;
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    }
+    h3 {
+        text-align: center;
+    }
+    .left-side {
+        float: left;
+        border-bottom: 1px solid #ccc;
+        padding: 50px;
+        
+    }
+    #dino-kuva {
+        float: right; 
+        margin-left: 20px; 
+    }
+    #taming-linkki {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #right-pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header" id="logo">
+      <a href="ARK.html">
+        <img src="Velothink logo.jpg" width="120px" height="119px"></a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Creatures<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="dinosaurukset.html">Dinosaurs</a></li>     
+          <li><a href="bosses.html">Bosses</a></li>
+     
+        </ul>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Features<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Caves</a></li>
+          <li><a href="#">Tribes</a></li>
+
+        </ul>
+    </li>
+    <li><a href="Gameplay.html">Gameplay</a></li>
+   
+
+    <form class="navbar-search" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+<div class="container" id="esittely">
+    <div class="container">
+        <div class="left-side">
+            <h1>Armor</h1>
+
+  <p>In ARK: Survival Evolved you can wear different sets of armor by equipping it in your inventory.
+
+    So far, there are 11 tiers of armor in the game. These armor sets can either be crafted, or found in supply drops.</p>
+
+  <h1>Different armor</h1>
+
+  <div id="dino-kuva"> 
+    <img src="/creatures/Dunkleosteus.png" width="300" height="200">
+  </div>
+
+  
+  <div id="Cloth armor">
+    <h2>Cloth armor</h2>
+    <ul>
+        <li>Provides 10 armor points per piece (50 total).</li>
+        <li>Drops from level 3 white beam loot crates.</li>
+        <li>Grants low insulation from heat.</li>
+        <li>Breaks very easily from strong attacks and offers little damage reduction.</li>
+        <li>Offers insulation and defense to low-level players.</li>
+      </ul>
+         
+</div>
+  
+  <div id="hide armor">
+  <h2>Hide armor</h2>
+    <ul>
+    
+    <li>Provides 20 armor points per piece (100 total).</li>
+    <li>Drops from level 15 green beam loot crates.</li>
+    <li>Grants insulation from the cold and passable damage reduction.</li>
+    <li>It is identical in stats to the Federation Exo Set Armor from Genesis 2. Only difference, the Exo Armor is unbreakable, has abilities like tek armor and is obtained upon spawning/respawning in Genesis 2.</li>
+  </ul>
+        </div>  
+
+  
+  <div id="Fur gear">
+    <h2>Fur gear</h2>
+    <ul>
+        <li>Fur Chestpiece</li>
+        <li>Provides 40 armor points per piece (200 total).</li>
+        <li>Transporting goods can be difficult when wearing/carrying this armor due to how much it weighs in comparison to other sets.</li>
+        <li>Provides the highest insulation from the cold, but significantly lowers heat resistance.</li>
+        <li>Provides no cold insulation while in water, making it useless when diving.</li>
+      </ul>
+        </div>  
+  <div id="chillie gear">
+    <h2>cillie gear</h2>
+    <ul>
+      
+        <li>Provides 32 armor points per piece (160 total).</li>
+        <li>Functions as a camouflage suit, as it reduces enemy sight range by 50%.</li>
+        <li>Provides excellent insulation from heat and moderate insulation from the cold.</li>
+      </ul>
+        </div>
+    <div id="chitin gear">
+        <h2>Chitin gear</h2>
+        <ul>
+            <li>Provides 50 armor points per piece (250 total).</li>
+            <li>Drops from level 25 blue beam loot crates.</li>
+            <li>Provides poor insulation from climatic conditions and offers adequate damage reduction.</li>
+            <li>Reduces heat insulation and provides minimal cold insulation.</li>
+          </ul>
+            </div>
+     <div id="Flak gear">
+        <h2>Flak gear</h2>
+        <ul>
+        
+            <li>Provides 100 armor points per piece (500 total).</li>
+            <li>Drops from level 45 yellow beam loot crates.</li>
+            <li>Provides poor insulation from climatic conditions and offers superior damage reduction.</li>
+            <li>Reduces heat insulation and provides little cold insulation.</li>
+          </ul> 
+     </div>
+<div id="Hazard suit">
+    <h2>Hazard suit</h2>
+    <ul>
+        <li>Provides 65 armor per piece (325 total).</li>
+        <li>Provides immunity to radiation.</li>
+        <li>Must have all pieces equipped for proper radiation immunity.</li>
+        <li>Provides the best heat insulation of any armor set, in addition to minimal cold insulation.</li>
+      </ul>
+</div>
+<div id="scuba suit">
+    <H2>Scuba suit</H2>
+        <ul>
+            <li>Provides 0 armor points per piece, except for the SCUBA leggings, which provide 5 armor points (5 total).</li>
+            <li>Although it provides minimal defense, this armor set is very useful for exploring locations where you cannot easily access clean air. It grants the wearer unlimited oxygen, stamina, clear underwater vision, and drastically increased swimming speed.</li>
+            <li>Usually useless when worn on land due to slowing its wearer and obstructing vision.</li>
+            <li>This armor set only consists of 4 parts, as there are no SCUBA gloves.</li>
+            <li>Reduces the amount of damage taken from poisonous air in the Swamp Cave.</li>
+          </ul>
+</div>
+<div id="Riot gear">
+    <h2>Riot gear</h2>
+    <ul>
+        <li>Provides 115 armor points per piece (575 total).</li>
+        <li>Provides poor defense against climatic conditions and a very good defense against players and dinos.</li>
+        <li>Reduces the amount of torpor taken, which makes it harder to knock the wearer out.</li>
+      </ul>
+</div>
+<div id="Tek Gear">
+    <h2>Tek gear</h2>
+    <ul>
+        <li>Provides 180 armor points per piece (900 total).</li>
+        <li>Provides modest insulation from the cold and offers extraordinary damage reduction.</li>
+        <li>Each part of this armor set grants different special abilities. When the full set is equipped, it provides night vision, a jet pack, a heavy hitting punch, fall damage negation, and a speed boost.</li>
+        <li>Provides +200 insulation against climatic conditions when charged with element</li>
+        <li>As the ultimate armor of Ark, a player must obtain all necessary Tekgrams from bosses before being able to wear this armor.</li>
+      </ul>
+</div>
+        </div>
+ 
+<footer id="main-footer">
+    <p>© Copyright 2023</p>  
+</footer> 
+
+</body>
+</html>
